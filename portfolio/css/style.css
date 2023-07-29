@@ -93,12 +93,17 @@ video {
 html {
     font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
     line-height: 1.5em;
 }
 
 body {
     background-color: #121212;
     color: #e4e4e4;
+}
+
+.card .text-muted {
+    color: #bcbcbc!important;;
 }
 
 /*Header*/
@@ -147,56 +152,109 @@ footer p {
 
 
 /*Work*/
-.col-sm-12 img {
+/* .col-sm-12 img {
     border-radius: 16px;
     background-color: #e4e4e4;
 }
 
 .col-sm-12.col-md-6:last-of-type {
     flex: 1;
+} */
+
+.prjs .card {
+    background-color: #121212;
+    color: #e4e4e4;
+}
+
+.card-img-top {
+    background-color: #e4e4e4;
+    border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)))
 }
 
 
 /* Main */
 
 .intro {
-    padding: 4em 0;
+    padding: 3em 0;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 1.6em;
     font-weight: 700;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
+
+h2 {
+    font-size: 1.5em;
+}
+
 
 /*About*/
 
 
-/* X-small devices (landscape phones, 576px and up) */
+/* X-small devices (default) */
+
+    .prjs .card {
+        background-color: #121212;
+        color: #e4e4e4;
+        text-align: center;
+    }
+    .card .btn {
+        display: block;
+    }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .prjs .card {
+        background-color: #121212;
+        color: #e4e4e4;
+        text-align: center;
+    }
+
+    .card .btn {
+        display: block;
+    }
+}
 
 
-/* Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
 
-
-
-Medium devices (tablets, 768px and up)
+/*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    ...
+    .prjs .card {
+        background-color: #121212;
+        color: #e4e4e4;
+        max-width: 50%;
+        text-align: start;
+    }
+
+    .card .btn {
+        display: inline-block
+    }
 }
 
-Large devices (desktops, 992px and up)
+/*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    ...
+    .prjs .card {
+        background-color: #121212;
+        color: #e4e4e4;
+
+    }
 }
 
-X-Large devices (large desktops, 1200px and up)
+/*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    ...
+    .prjs .card {
+        background-color: #121212;
+        color: #e4e4e4;
+
+    }
 }
 
-XX-Large devices (larger desktops, 1400px and up)
+/*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-    ...
-} */
+    .prjs .card {
+        background-color: #121212;
+        color: #e4e4e4;
+    }
+}
