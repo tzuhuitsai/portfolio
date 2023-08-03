@@ -6,6 +6,11 @@ body {
     line-height: 1.5em;
 }
 
+* {
+    background-color: inherit;
+    color: inherit;
+}
+
 .card .text-muted {
     color: #bcbcbc !important;
 }
@@ -17,12 +22,32 @@ li {
     padding: 0;
 }
 
-/*Header*/
-
-header {
-    background-color: #121212;
-    color: #e4e4e4c0;
+h1 {
+    font-size: 2.5em;
+    line-height: 1.6em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
 }
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    color: #00c6c6;
+}
+
+.link:visited {
+    color: #7dabb9;
+}
+
+/*All-Header*/
 
 header .nav-link {
     padding: 0.5rem;
@@ -33,11 +58,11 @@ header .navbar-nav {
 }
 
 header .navbar-nav .nav-link:hover {
-    color: #e4e4e4;
+    color: inherit;
 }
 
 header .navbar-nav .nav-link.active {
-    color: #e4e4e4;
+    color: inherit;
 }
 
 header img {
@@ -45,7 +70,7 @@ header img {
     margin: 0.5em;
 }
 
-/*Footer*/
+/*All-Footer*/
 
 footer {
     margin: 2.5em;
@@ -69,16 +94,9 @@ section {
     margin: 2.5em 0;
 }
 
-h1 {
-    font-size: 2.5em;
-    line-height: 1.6em;
-    font-weight: 700;
-    padding-bottom: 0.5em;
-}
-
-h2 {
-    font-size: 1.5em;
-    line-height: 1.6em;
+.card,
+.card-header {
+    border-width: 0;
 }
 
 /* Main */
@@ -91,11 +109,12 @@ h2 {
     background-color: #e4e4e4;
     border-radius: 15%;
     object-fit: cover;
+    height: 100%;
 }
 
 .prjs .card {
-    background-color: #121212;
-    color: #e4e4e4;
+    background-color: inherit;
+    color: inherit;
     text-align: center;
     margin: 1.5em 0;
 }
@@ -108,60 +127,173 @@ h2 {
     display: block;
 }
 
+.prjs h2 {
+    margin: 0;
+}
+
 /*About*/
 
 .abilities {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* text-align: center; */
+    justify-content: space-between;
 }
 
 .abilities .card {
-    width: 100vw;
     margin: 1.5em 0;
-    background-color: #121212;
-    color: #e4e4e4;
+    background-color: inherit;
+    color: inherit;
 }
 
-/*Projects*/
-section.prj {
-    margin: 0 0 2.5em 0;
-}
-
-.prj {
+/*Project*/
+.prj-overview {
+    margin: 0;
     background-color: #e4e4e4;
     color: #121212;
+    padding: 0 .75rem;
 }
 
-.prj .card-img-top {
-    background-color: #e4e4e4;
+.prj-img.card {
+    background-color: inherit;
+    border-width: 0;
 }
 
-.prj h1 {
-    text-align: center;
-}
-
+.prj h1,
 .prj-type {
     text-align: center;
 }
 
-/* a {
-    color: #3dcfff;
-} */
+.prj-info.card-body {
+    background-color: inherit;
+    color: inherit;
+}
+
+.prj-info .prj-sum {
+    padding: 0.5em 0;
+}
+
+.prj-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.prj-table .card {
+    background-color: #e4e4e4;
+    color: #121212;
+}
+
+.prj-table .card-header {
+    background-color: inherit;
+}
+
+.prj-table h2 {
+    font-size: 1.2em;
+}
+
+.prj .link {
+    color: #006e95;
+}
+
+.prj-info ol.breadcrumb {
+    font-size: 14px;
+}
+
+.prj .card-title {
+    padding: 0;
+}
+
+.section-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1em 1em;
+    color: inherit;
+    overflow: scroll;
+    z-index: 1;
+    align-items: center;
+}
+
+.section-nav a {
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+.sec-name {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.sec-name a {
+    text-decoration: none;
+    color: #e4e4e4;
+    font-size: 0.5em;
+}
+
+#overview,
+#research,
+#design,
+#refine,
+#takeaways {
+    scroll-margin-top: 6em;
+}
+
+.dot {
+    border-radius: 50%;
+    background-color: #e4e4e4;
+    width: 0.7em;
+    height: 0.7em;
+    margin: 0.5em;
+}
+
+.content {
+    position: relative;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.section-nav .active {
+    background-color: #e4e4e4;
+    opacity: 75%;
+    color: #121212;
+    padding: 0.5em 1em;
+    border-radius: 0.7em;
+}
+
+.content h2 {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 2em 0 1.5em 0;
+}
+
+.content h3 {
+    margin: 1.25em 0 0.75em 0;
+}
+
+.content p {
+    margin: 0 0 3em 0;
+}
+
+
 
 /* Small devices (landscape phones, 576px and up)*/
-/* @media (min-width: 576px) {
-    .prjs .card {
-    }
-} */
-
-
+/* @media (min-width: 576px) {} */
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+
+    /* Main */
     .prjs .card {
-        max-width: 45%;
+        max-width: 50%;
         text-align: start;
     }
 
@@ -174,31 +306,82 @@ section.prj {
         padding: 0.5em 1.5em;
     }
 
-    .abilities {
-        justify-content: space-between;
+    /* Project */
+
+    .content .gif {
+        width: 20%;
+        height: auto;
     }
 
-    .abilities .card {
-        width: 45%;
-    }
 }
 
 /*Large devices (desktops, 992px and up)*/
-/* @media (min-width: 992px) {
-    .prjs .card {
+@media (min-width: 992px) {
 
+    /* Project */
+    .prj h1 {
+        text-align: left;
     }
-} */
 
-/*X-Large devices (large desktops, 1200px and up)*/
-/* @media (min-width: 1200px) {
-    .prjs .card {
+    .prj-type {
+        text-align: left;
     }
-} */
 
-/*XX-Large devices (larger desktops, 1400px and up)*/
-/* @media (min-width: 1400px) {
-    .prjs .card {
-
+    .prj-info {
+        padding: 0 2em;
     }
-} */
+
+    .prj-overview .breadcrumb {
+        padding-top: 1em;
+        margin: 0;
+    }
+
+    .section-nav {
+        padding: 1em 0;
+    }
+
+    .sec-name {
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        font-size: 16px;
+        opacity: 60%;
+    }
+
+    .sec-name:hover {
+        opacity: 100%;
+        transition: 150ms;
+    }
+
+    .sec-name a {
+        font-size: 1em;
+    }
+
+    .content h2 {
+        margin: 5em 0 1em 0;
+    }
+
+    #overview,
+    #research,
+    #design,
+    #refine,
+    #takeaways {
+        scroll-margin-top: 6em;
+    }
+
+    .content img {
+        width: 50%;
+        height: auto;
+    }
+
+    .content .gif {
+        width: 25%;
+        height: auto;
+    }
+
+
+    /*X-Large devices (large desktops, 1200px and up)*/
+    /* @media (min-width: 1200px) {} */
+    /*XX-Large devices (larger desktops, 1400px and up)*/
+    /* @media (min-width: 1400px) {}*/
