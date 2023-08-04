@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sally Tsai</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#section-nav" data-bs-offset="0"
+data-bs-smooth-scroll="true" tabindex="0">
     <header class="navbar navbar-expand-sm" data-bs-theme="dark">
         <nav class="container-fluid">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="../tzuhuitsai.html">Work</a>
+                    <a class="nav-link" href="../index.html">Work</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../about.html">About</a>
                 </li>
             </ul>
-            <a href="../tzuhuitsai.html" class="logo navbar-brand">
+            <a href="../index.html" class="logo navbar-brand">
                 <img src="../img/TTH.png" alt="Sally Tsai's personal logo">
             </a>
         </nav>
@@ -40,7 +41,7 @@
             <article class="prj-info card-body col-lg-8">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../tzuhuitsai.html" class="link">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../index.html" class="link">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Project</li>
                     </ol>
                 </nav>
@@ -85,18 +86,16 @@
         </section>
 
         <section class="prj-detail container">
-            <article class="prj-detail">
-                <nav id="section-nav" class="section-nav">
-                    <a class="sec active" href="#overview">Overview</a>
-                    <a class="sec" href="#research">Research</a>
-                    <a class="sec" href="#design">Design</a>
-                    <a class="sec" href="#refine">Refine</a>
-                    <a class="sec" href="#rwd">RWD</a>
-                    <a class="sec" href="#takeaways">Takeaways</a>
+                <nav id="section-nav">
+                    <a class href="#overview">Overview</a>
+                    <a class href="#research">Research</a>
+                    <a class href="#design">Design</a>
+                    <a class href="#refine">Refine</a>
+                    <a class href="#rwd">RWD</a>
+                    <a class href="#takeaways">Takeaways</a>
                 </nav>
 
-                <article data-bs-spy="scroll" data-bs-target="#section-nav" data-bs-offset="6em"
-                    data-bs-smooth-scroll="true" class="content" tabindex="0">
+                <div class="content">
                     <article class="overview" id="overview">
                         <h2>Overview</h2>
                         <h3>The problem</h3>
@@ -185,61 +184,37 @@
                         <p>After testing the high-fidelity prototype, we identified further areas for improvement.</p>
                         <img src="../img/prj/07_infleme/mobile_hifi prototype 1.gif"
                             alt="high-fidelity prototype of infleme freelance servuce platform" class="gif">
-                        <h4>Findings</h4>
-                        <ol>
-                            <li>It was difficult to determine which conversation window was currently displayed.</li>
-                            <li>The purposal button for projects lacked sufficient emphasis.</li>
-                            <li>The presentation style of project listings did not encourage users to click.
-                                Consideration
-                                was
-                                given to changing to a card-based layout.</li>
-                        </ol>
-                        <h3>Refine Hi-Fi Prototype</h3>
-                        <p>Based on the above findings, we made further updates and arrived at the final version of the
-                            prototype.</p>
-                        <ul>
-                            <li>Improve the purposal button
-                                <img src="../img/prj/07_infleme/finding solution 2_purposal button.png"
-                                    alt="Change the color choice to increase color contrast on purposal button.">
-                            </li>
-                            <li>Redesign project engagement setting to prevent a list of a experienced designer is too
-                                logn
-                                to
-                                navigate.
-                                <img src="../img/prj/07_infleme/pc_hifi_project engagement.png"
-                                    alt="Redesign the table of porject engagement history for longer table entries.">
-                            </li>
-                        </ul>
-                        <h3>Dark and Light Mode</h3>
-                        <p>We designed the website to be responsive, accommodating both dark and light modes.</p>
-                        <img src="../img/prj/07_infleme/dark-light mode.png" alt="Dark and Light mode of the platform">
-                        <h3>Design Documents</h3>
-                        <p>For this project, we based the design on the Material Design framework and incorporated the
-                            client's
-                            specified colors. Finally, I compiled the design components, fonts, colors, and layouts used
-                            during
-                            the design process into design documents, which were submitted to the client along with
-                            other
-                            relevant materials.</p>
-                        <img src="../img/prj/07_infleme/Design Doc.png" alt="Dsign Documents">
-                        <h3>Accessibility considerations</h3>
-                        <p>During the website development process, we consistently considered accessibility.</p>
-                        <ol>
-                            <li>We added icons in front of buttons to provide visual representation.</li>
-                            <li>We ensured sufficient color contrast for text areas to enhance visibility.</li>
-                            <li>We followed hierarchy principles in organizing the content of the text.</li>
-                        </ol>
+                       
                     </article>
                     <article class="rwd" id="rwd">
                         <h2>Responsive Design</h2>
                         <p>When users using the websiteversion of this platform, the purposes are learn about the
                             platform,
-                            donation,and search for opportunities.</p>
-                        <img src="C:\Users\tsait\Nas\Tsai\Documents\career\portfolio\website\img\prj\Artful Cause\AC-web-sitemap.jpg"
-                            alt="Sitemap of Artful Cause">
-                        <h3>Responsive designs</h3>
-                        <img src="C:\Users\tsait\Nas\Tsai\Documents\career\portfolio\website\img\prj\Artful Cause\Artful Cause - responsive designs sample.webp"
-                            alt="Artful cause website on different screen sizes">
+                            donation,and search for opportunities. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eum laborum quo veritatis delectus earum distinctio libero maiores aspernatur. Vero accusantium cumque nisi provident fugiat aliquam laboriosam aspernatur, nesciunt nulla.
+                            Ipsum tempora dolorum rerum voluptatem sit libero quasi dolores assumenda? Ullam sapiente natus recusandae amet minima facere cumque, odit magni perferendis, tempore nemo voluptatem nisi aliquid voluptate maxime veritatis ea!
+                            Nisi officiis, inventore non quam praesentium officia sapiente incidunt eum quae? Incidunt nam error soluta esse aut natus ullam hic earum, delectus totam nobis vero provident officiis. Inventore, deserunt obcaecati?
+                            Quis explicabo iste impedit recusandae ea eum labore. Incidunt tempore temporibus a totam non, vero eveniet porro itaque inventore quidem illum reprehenderit minus! Nesciunt, culpa corporis! Magnam dolorum ad eaque.
+                            Quos, voluptates? Hic vel ad maiores, earum necessitatibus provident obcaecati dignissimos recusandae nostrum ea similique repellat esse et eaque libero nihil, laborum, perferendis fuga a doloribus doloremque quisquam quia ex.
+                            Quod dignissimos consequuntur sequi officiis velit accusantium perferendis quam error dolorem! In esse cupiditate vero placeat libero omnis facilis minus nihil amet, aliquam ducimus. Non ab tempora eaque rerum labore.
+                            Hic aperiam fugit perferendis ipsam, laudantium, reprehenderit tempore consequatur deleniti illo, velit dolores minima nemo maxime quam repudiandae sint ipsa omnis vel pariatur unde repellendus beatae. Ut asperiores incidunt officiis.
+                            Quibusdam nisi, est laboriosam, earum quae illum porro necessitatibus odit eum aliquid, praesentium repellat eaque maxime magni voluptas quasi amet magnam minima consectetur atque eos. Molestias facere aliquid cumque omnis.
+                            Veritatis error ex nobis asperiores cum dolore! Nesciunt, sit. Qui excepturi recusandae modi doloremque sequi? Omnis, iusto officiis nesciunt debitis sequi, cupiditate tempora nisi commodi distinctio quam quas, ullam voluptas.
+                            Quos labore assumenda magnam a placeat suscipit. Voluptas eaque pariatur voluptates ipsam deserunt doloribus vitae eligendi quis quaerat delectus necessitatibus dolorum iste minus numquam enim saepe, ea libero? Ea, minima!
+                            Qui, consectetur? Excepturi neque amet tempore facere unde quis aut velit aliquid vitae error architecto ducimus, deserunt laboriosam a est accusantium voluptas quidem inventore quo adipisci optio reiciendis ea sint!
+                            Aspernatur architecto minus rerum quibusdam vero, maxime, soluta officia assumenda modi hic iusto? Aspernatur, aut ipsam molestiae, aliquam omnis hic quam totam recusandae possimus sunt molestias quod nisi, amet non.
+                            Magni neque facilis quaerat voluptate consequatur illo vero necessitatibus labore, expedita optio vitae eaque, voluptatem alias eius! Nesciunt provident ex debitis cum maiores? Quis illum adipisci sint, itaque laudantium aliquid.
+                            Quisquam quis dolorum doloribus quibusdam enim eveniet explicabo dolorem, hic aspernatur illo labore assumenda animi excepturi, inventore asperiores eaque officiis distinctio rem deleniti doloremque temporibus! Praesentium nobis impedit earum suscipit.
+                            Laborum voluptatem ducimus cupiditate nemo iste? Hic numquam tempora sint, impedit perspiciatis itaque aut necessitatibus corrupti, praesentium laborum, voluptate facilis amet unde esse ipsa vitae aperiam maiores accusantium quia nobis?
+                            Exercitationem, ratione quam! Quos quas reiciendis sunt possimus corporis in officia aperiam facilis vitae suscipit quia, reprehenderit adipisci, consequuntur deserunt nemo. Nesciunt aut molestiae eum vel placeat saepe ut asperiores.
+                            Sed ab expedita excepturi, odio cum natus enim iste numquam impedit distinctio quos modi obcaecati quis. Debitis culpa deserunt ab voluptates deleniti repudiandae dolorum inventore exercitationem tenetur dolore, eius quidem?
+                            Dolorem tempore, illum libero ipsum maiores quam harum quas rem incidunt ipsa. Iste voluptas amet temporibus tempore aperiam ducimus provident, doloremque, sapiente consequuntur, veniam distinctio inventore nam eum iusto sed?
+                            Nulla dolor magnam sit beatae saepe deserunt sequi, tempora necessitatibus architecto obcaecati provident dignissimos ipsum, sapiente molestiae fugiat velit enim ad iure recusandae voluptatibus sunt nobis. Quas deserunt expedita veritatis?
+                            Laudantium labore animi, ab, dolore voluptates quos sit, aspernatur tenetur pariatur ut quas. Dignissimos pariatur expedita minus consequatur et nobis maiores, unde nemo obcaecati alias commodi ipsa labore delectus numquam!
+                            Veniam laboriosam, non necessitatibus officia autem perferendis incidunt, atque iusto quae dolorem ratione tenetur velit vitae consectetur nisi cum sed totam alias harum qui dolor tempore sapiente consequuntur. Enim, fugit!
+                            Delectus rerum sit, ad, laboriosam distinctio temporibus nihil ut suscipit incidunt error, repellendus tenetur maiores expedita necessitatibus fugit. Quaerat saepe neque vero omnis est autem quasi quisquam iusto laborum eos.
+                            Temporibus numquam quas quisquam molestias sit delectus, dolores iusto nihil ipsa facere. Temporibus commodi, nesciunt possimus veniam, exercitationem totam iure voluptatem voluptate, nihil aliquid cumque sint beatae voluptatibus expedita inventore.
+                            Adipisci quia dolor aperiam sunt deleniti, dicta reiciendis voluptate corporis expedita vel ipsam nisi! Ea tenetur quae explicabo quis ab? Consectetur earum fugit hic adipisci magnam, libero optio? Sapiente, exercitationem.
+                            Perspiciatis eos, error excepturi doloremque sequi laudantium iste earum velit odio voluptates neque? Aspernatur porro adipisci eveniet, nostrum, mollitia saepe hic ratione dignissimos distinctio vero dolorem quisquam accusamus at est.</p>
                     </article>
                     <article class="takeaways" id="takeaways">
                         <h2>Going forward</h2>
@@ -281,8 +256,7 @@
                                 features are developed.</li>
                         </ul>
                     </article>
-                </article>
-            </article>
+                </div>
         </section>
 
         <section class="other-prj container">
@@ -339,9 +313,7 @@
         <p>All rights reserved</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
