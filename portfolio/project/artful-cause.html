@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sally Tsai</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#section-nav" data-bs-offset="0"
-data-bs-smooth-scroll="true" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#section-nav" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
     <header class="navbar navbar-expand-sm" data-bs-theme="dark">
         <nav class="container-fluid">
             <ul class="navbar-nav">
@@ -86,16 +90,29 @@ data-bs-smooth-scroll="true" tabindex="0">
         </section>
 
         <section class="prj-detail container">
-                <nav id="section-nav">
-                    <a class href="#overview">Overview</a>
-                    <a class href="#research">Research</a>
-                    <a class href="#design">Design</a>
-                    <a class href="#refine">Refine</a>
-                    <a class href="#rwd">RWD</a>
-                    <a class href="#takeaways">Takeaways</a>
-                </nav>
+            <article class="row">
+                <div class="col-lg-2">
+                    <button class="bd-toc-toggle collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+                        Content
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            unfold_more
+                        </span>
+                    </button>
+                    <div class="bd-toc-collapse collapse" id="tocContents" style>
 
-                <div class="content">
+                        <nav id="section-nav">
+                            <a class href="#overview">Overview</a>
+                            <a class href="#research">Research</a>
+                            <a class href="#design">Design</a>
+                            <a class href="#refine">Refine</a>
+                            <a class href="#rwd">RWD</a>
+                            <a class href="#takeaways">Takeaways</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="content col-lg-10">
                     <article class="overview" id="overview">
                         <h2>Overview</h2>
                         <h3>The problem</h3>
@@ -105,7 +122,8 @@ data-bs-smooth-scroll="true" tabindex="0">
                             user experience and visual design.</p>
                         <h3>The goals</h3>
                         <ul>
-                            <li>Develop a responsive website that maintains interface consistency, content and function
+                            <li>Develop a responsive website that maintains interface consistency, content and
+                                function
                                 continuity, and well-balanced layouts across different screen sizes.</li>
                             <li>Design a simple and clean interface in both dark and light modes, incorporating the
                                 primary colors and logo provided by the client.</li>
@@ -114,21 +132,26 @@ data-bs-smooth-scroll="true" tabindex="0">
                     </article>
                     <article class="research" id="research">
                         <h2>Research</h2>
-                        <p>In addition to leveraging our own experience using multiple freelance platforms, we conducted
-                            research on various platforms in the market to analyze the strengths and weaknesses of their
+                        <p>In addition to leveraging our own experience using multiple freelance platforms, we
+                            conducted
+                            research on various platforms in the market to analyze the strengths and weaknesses of
+                            their
                             interface and user flow. Our goal was to make our platform more exceptional.</p>
                         <h3>Ideation</h3>
                         <p>Prioritizing mobile screen sizes, we conducted quick sketches to explore various layout
-                            possibilities. After careful consideration, we combined the strengths of different layouts
+                            possibilities. After careful consideration, we combined the strengths of different
+                            layouts
                             and proceeded to the digital wireframing stage.</p>
                         <img src="../img/prj/07_infleme/crazy 8.webp" alt="infleme crazy 8 samples">
                     </article>
                     <article class="design" id="design">
                         <h2>Starting the design</h2>
                         <h3>Digital Wireframe</h3>
-                        <p>In the digital wireframe, we made adjustments to the layout and information cards to enhance
+                        <p>In the digital wireframe, we made adjustments to the layout and information cards to
+                            enhance
                             readability.
-                            We utilized whitespace and font hierarchy to highlight important information. Additionally,
+                            We utilized whitespace and font hierarchy to highlight important information.
+                            Additionally,
                             we
                             designed
                             a guided tutorial for the project creation process, making it easier for users to get
@@ -181,46 +204,130 @@ data-bs-smooth-scroll="true" tabindex="0">
                         <img src="../img/prj/07_infleme/RWD sample.png"
                             alt="Home page design in PC screen size and mobile screen size">
                         <h3>High-fidelity prototype</h3>
-                        <p>After testing the high-fidelity prototype, we identified further areas for improvement.</p>
+                        <p>After testing the high-fidelity prototype, we identified further areas for improvement.
+                        </p>
                         <img src="../img/prj/07_infleme/mobile_hifi prototype 1.gif"
                             alt="high-fidelity prototype of infleme freelance servuce platform" class="gif">
-                       
                     </article>
                     <article class="rwd" id="rwd">
                         <h2>Responsive Design</h2>
                         <p>When users using the websiteversion of this platform, the purposes are learn about the
                             platform,
-                            donation,and search for opportunities. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eum laborum quo veritatis delectus earum distinctio libero maiores aspernatur. Vero accusantium cumque nisi provident fugiat aliquam laboriosam aspernatur, nesciunt nulla.
-                            Ipsum tempora dolorum rerum voluptatem sit libero quasi dolores assumenda? Ullam sapiente natus recusandae amet minima facere cumque, odit magni perferendis, tempore nemo voluptatem nisi aliquid voluptate maxime veritatis ea!
-                            Nisi officiis, inventore non quam praesentium officia sapiente incidunt eum quae? Incidunt nam error soluta esse aut natus ullam hic earum, delectus totam nobis vero provident officiis. Inventore, deserunt obcaecati?
-                            Quis explicabo iste impedit recusandae ea eum labore. Incidunt tempore temporibus a totam non, vero eveniet porro itaque inventore quidem illum reprehenderit minus! Nesciunt, culpa corporis! Magnam dolorum ad eaque.
-                            Quos, voluptates? Hic vel ad maiores, earum necessitatibus provident obcaecati dignissimos recusandae nostrum ea similique repellat esse et eaque libero nihil, laborum, perferendis fuga a doloribus doloremque quisquam quia ex.
-                            Quod dignissimos consequuntur sequi officiis velit accusantium perferendis quam error dolorem! In esse cupiditate vero placeat libero omnis facilis minus nihil amet, aliquam ducimus. Non ab tempora eaque rerum labore.
-                            Hic aperiam fugit perferendis ipsam, laudantium, reprehenderit tempore consequatur deleniti illo, velit dolores minima nemo maxime quam repudiandae sint ipsa omnis vel pariatur unde repellendus beatae. Ut asperiores incidunt officiis.
-                            Quibusdam nisi, est laboriosam, earum quae illum porro necessitatibus odit eum aliquid, praesentium repellat eaque maxime magni voluptas quasi amet magnam minima consectetur atque eos. Molestias facere aliquid cumque omnis.
-                            Veritatis error ex nobis asperiores cum dolore! Nesciunt, sit. Qui excepturi recusandae modi doloremque sequi? Omnis, iusto officiis nesciunt debitis sequi, cupiditate tempora nisi commodi distinctio quam quas, ullam voluptas.
-                            Quos labore assumenda magnam a placeat suscipit. Voluptas eaque pariatur voluptates ipsam deserunt doloribus vitae eligendi quis quaerat delectus necessitatibus dolorum iste minus numquam enim saepe, ea libero? Ea, minima!
-                            Qui, consectetur? Excepturi neque amet tempore facere unde quis aut velit aliquid vitae error architecto ducimus, deserunt laboriosam a est accusantium voluptas quidem inventore quo adipisci optio reiciendis ea sint!
-                            Aspernatur architecto minus rerum quibusdam vero, maxime, soluta officia assumenda modi hic iusto? Aspernatur, aut ipsam molestiae, aliquam omnis hic quam totam recusandae possimus sunt molestias quod nisi, amet non.
-                            Magni neque facilis quaerat voluptate consequatur illo vero necessitatibus labore, expedita optio vitae eaque, voluptatem alias eius! Nesciunt provident ex debitis cum maiores? Quis illum adipisci sint, itaque laudantium aliquid.
-                            Quisquam quis dolorum doloribus quibusdam enim eveniet explicabo dolorem, hic aspernatur illo labore assumenda animi excepturi, inventore asperiores eaque officiis distinctio rem deleniti doloremque temporibus! Praesentium nobis impedit earum suscipit.
-                            Laborum voluptatem ducimus cupiditate nemo iste? Hic numquam tempora sint, impedit perspiciatis itaque aut necessitatibus corrupti, praesentium laborum, voluptate facilis amet unde esse ipsa vitae aperiam maiores accusantium quia nobis?
-                            Exercitationem, ratione quam! Quos quas reiciendis sunt possimus corporis in officia aperiam facilis vitae suscipit quia, reprehenderit adipisci, consequuntur deserunt nemo. Nesciunt aut molestiae eum vel placeat saepe ut asperiores.
-                            Sed ab expedita excepturi, odio cum natus enim iste numquam impedit distinctio quos modi obcaecati quis. Debitis culpa deserunt ab voluptates deleniti repudiandae dolorum inventore exercitationem tenetur dolore, eius quidem?
-                            Dolorem tempore, illum libero ipsum maiores quam harum quas rem incidunt ipsa. Iste voluptas amet temporibus tempore aperiam ducimus provident, doloremque, sapiente consequuntur, veniam distinctio inventore nam eum iusto sed?
-                            Nulla dolor magnam sit beatae saepe deserunt sequi, tempora necessitatibus architecto obcaecati provident dignissimos ipsum, sapiente molestiae fugiat velit enim ad iure recusandae voluptatibus sunt nobis. Quas deserunt expedita veritatis?
-                            Laudantium labore animi, ab, dolore voluptates quos sit, aspernatur tenetur pariatur ut quas. Dignissimos pariatur expedita minus consequatur et nobis maiores, unde nemo obcaecati alias commodi ipsa labore delectus numquam!
-                            Veniam laboriosam, non necessitatibus officia autem perferendis incidunt, atque iusto quae dolorem ratione tenetur velit vitae consectetur nisi cum sed totam alias harum qui dolor tempore sapiente consequuntur. Enim, fugit!
-                            Delectus rerum sit, ad, laboriosam distinctio temporibus nihil ut suscipit incidunt error, repellendus tenetur maiores expedita necessitatibus fugit. Quaerat saepe neque vero omnis est autem quasi quisquam iusto laborum eos.
-                            Temporibus numquam quas quisquam molestias sit delectus, dolores iusto nihil ipsa facere. Temporibus commodi, nesciunt possimus veniam, exercitationem totam iure voluptatem voluptate, nihil aliquid cumque sint beatae voluptatibus expedita inventore.
-                            Adipisci quia dolor aperiam sunt deleniti, dicta reiciendis voluptate corporis expedita vel ipsam nisi! Ea tenetur quae explicabo quis ab? Consectetur earum fugit hic adipisci magnam, libero optio? Sapiente, exercitationem.
-                            Perspiciatis eos, error excepturi doloremque sequi laudantium iste earum velit odio voluptates neque? Aspernatur porro adipisci eveniet, nostrum, mollitia saepe hic ratione dignissimos distinctio vero dolorem quisquam accusamus at est.</p>
+                            donation,and search for opportunities. Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Corrupti, eum laborum quo veritatis delectus earum distinctio libero maiores
+                            aspernatur. Vero accusantium cumque nisi provident fugiat aliquam laboriosam aspernatur,
+                            nesciunt nulla.
+                            Ipsum tempora dolorum rerum voluptatem sit libero quasi dolores assumenda? Ullam
+                            sapiente
+                            natus recusandae amet minima facere cumque, odit magni perferendis, tempore nemo
+                            voluptatem
+                            nisi aliquid voluptate maxime veritatis ea!
+                            Nisi officiis, inventore non quam praesentium officia sapiente incidunt eum quae?
+                            Incidunt
+                            nam error soluta esse aut natus ullam hic earum, delectus totam nobis vero provident
+                            officiis. Inventore, deserunt obcaecati?
+                            Quis explicabo iste impedit recusandae ea eum labore. Incidunt tempore temporibus a
+                            totam
+                            non, vero eveniet porro itaque inventore quidem illum reprehenderit minus! Nesciunt,
+                            culpa
+                            corporis! Magnam dolorum ad eaque.
+                            Quos, voluptates? Hic vel ad maiores, earum necessitatibus provident obcaecati
+                            dignissimos
+                            recusandae nostrum ea similique repellat esse et eaque libero nihil, laborum,
+                            perferendis
+                            fuga a doloribus doloremque quisquam quia ex.
+                            Quod dignissimos consequuntur sequi officiis velit accusantium perferendis quam error
+                            dolorem! In esse cupiditate vero placeat libero omnis facilis minus nihil amet, aliquam
+                            ducimus. Non ab tempora eaque rerum labore.
+                            Hic aperiam fugit perferendis ipsam, laudantium, reprehenderit tempore consequatur
+                            deleniti
+                            illo, velit dolores minima nemo maxime quam repudiandae sint ipsa omnis vel pariatur
+                            unde
+                            repellendus beatae. Ut asperiores incidunt officiis.
+                            Quibusdam nisi, est laboriosam, earum quae illum porro necessitatibus odit eum aliquid,
+                            praesentium repellat eaque maxime magni voluptas quasi amet magnam minima consectetur
+                            atque
+                            eos. Molestias facere aliquid cumque omnis.
+                            Veritatis error ex nobis asperiores cum dolore! Nesciunt, sit. Qui excepturi recusandae
+                            modi
+                            doloremque sequi? Omnis, iusto officiis nesciunt debitis sequi, cupiditate tempora nisi
+                            commodi distinctio quam quas, ullam voluptas.
+                            Quos labore assumenda magnam a placeat suscipit. Voluptas eaque pariatur voluptates
+                            ipsam
+                            deserunt doloribus vitae eligendi quis quaerat delectus necessitatibus dolorum iste
+                            minus
+                            numquam enim saepe, ea libero? Ea, minima!
+                            Qui, consectetur? Excepturi neque amet tempore facere unde quis aut velit aliquid vitae
+                            error architecto ducimus, deserunt laboriosam a est accusantium voluptas quidem
+                            inventore
+                            quo adipisci optio reiciendis ea sint!
+                            Aspernatur architecto minus rerum quibusdam vero, maxime, soluta officia assumenda modi
+                            hic
+                            iusto? Aspernatur, aut ipsam molestiae, aliquam omnis hic quam totam recusandae possimus
+                            sunt molestias quod nisi, amet non.
+                            Magni neque facilis quaerat voluptate consequatur illo vero necessitatibus labore,
+                            expedita
+                            optio vitae eaque, voluptatem alias eius! Nesciunt provident ex debitis cum maiores?
+                            Quis
+                            illum adipisci sint, itaque laudantium aliquid.
+                            Quisquam quis dolorum doloribus quibusdam enim eveniet explicabo dolorem, hic aspernatur
+                            illo labore assumenda animi excepturi, inventore asperiores eaque officiis distinctio
+                            rem
+                            deleniti doloremque temporibus! Praesentium nobis impedit earum suscipit.
+                            Laborum voluptatem ducimus cupiditate nemo iste? Hic numquam tempora sint, impedit
+                            perspiciatis itaque aut necessitatibus corrupti, praesentium laborum, voluptate facilis
+                            amet
+                            unde esse ipsa vitae aperiam maiores accusantium quia nobis?
+                            Exercitationem, ratione quam! Quos quas reiciendis sunt possimus corporis in officia
+                            aperiam
+                            facilis vitae suscipit quia, reprehenderit adipisci, consequuntur deserunt nemo.
+                            Nesciunt
+                            aut molestiae eum vel placeat saepe ut asperiores.
+                            Sed ab expedita excepturi, odio cum natus enim iste numquam impedit distinctio quos modi
+                            obcaecati quis. Debitis culpa deserunt ab voluptates deleniti repudiandae dolorum
+                            inventore
+                            exercitationem tenetur dolore, eius quidem?
+                            Dolorem tempore, illum libero ipsum maiores quam harum quas rem incidunt ipsa. Iste
+                            voluptas
+                            amet temporibus tempore aperiam ducimus provident, doloremque, sapiente consequuntur,
+                            veniam
+                            distinctio inventore nam eum iusto sed?
+                            Nulla dolor magnam sit beatae saepe deserunt sequi, tempora necessitatibus architecto
+                            obcaecati provident dignissimos ipsum, sapiente molestiae fugiat velit enim ad iure
+                            recusandae voluptatibus sunt nobis. Quas deserunt expedita veritatis?
+                            Laudantium labore animi, ab, dolore voluptates quos sit, aspernatur tenetur pariatur ut
+                            quas. Dignissimos pariatur expedita minus consequatur et nobis maiores, unde nemo
+                            obcaecati
+                            alias commodi ipsa labore delectus numquam!
+                            Veniam laboriosam, non necessitatibus officia autem perferendis incidunt, atque iusto
+                            quae
+                            dolorem ratione tenetur velit vitae consectetur nisi cum sed totam alias harum qui dolor
+                            tempore sapiente consequuntur. Enim, fugit!
+                            Delectus rerum sit, ad, laboriosam distinctio temporibus nihil ut suscipit incidunt
+                            error,
+                            repellendus tenetur maiores expedita necessitatibus fugit. Quaerat saepe neque vero
+                            omnis
+                            est autem quasi quisquam iusto laborum eos.
+                            Temporibus numquam quas quisquam molestias sit delectus, dolores iusto nihil ipsa
+                            facere.
+                            Temporibus commodi, nesciunt possimus veniam, exercitationem totam iure voluptatem
+                            voluptate, nihil aliquid cumque sint beatae voluptatibus expedita inventore.
+                            Adipisci quia dolor aperiam sunt deleniti, dicta reiciendis voluptate corporis expedita
+                            vel
+                            ipsam nisi! Ea tenetur quae explicabo quis ab? Consectetur earum fugit hic adipisci
+                            magnam,
+                            libero optio? Sapiente, exercitationem.
+                            Perspiciatis eos, error excepturi doloremque sequi laudantium iste earum velit odio
+                            voluptates neque? Aspernatur porro adipisci eveniet, nostrum, mollitia saepe hic ratione
+                            dignissimos distinctio vero dolorem quisquam accusamus at est.</p>
                     </article>
                     <article class="takeaways" id="takeaways">
                         <h2>Going forward</h2>
                         <h3>Takeaways</h3>
                         <h4>Impact</h4>
-                        <p>With the conclusion of the project, the UI/UX design phase has come to an end. The subsequent
+                        <p>With the conclusion of the project, the UI/UX design phase has come to an end. The
+                            subsequent
                             development will be carried out by the client.</p>
                         <h4>What I learned</h4>
                         <ul>
@@ -229,25 +336,31 @@ data-bs-smooth-scroll="true" tabindex="0">
                                 of its principles. In future web design projects, I aim to apply this system more
                                 effectively
                                 and efficiently, ensuring visual consistency and readability.</li>
-                            <li> I developed a habit of preserving versions at each stage of the design process. While
+                            <li> I developed a habit of preserving versions at each stage of the design process.
+                                While
                                 using
-                                components to handle recurring elements facilitated efficiency, it posed challenges when
+                                components to handle recurring elements facilitated efficiency, it posed challenges
+                                when
                                 working
-                                with components that span multiple pages. With increased proficiency in Figma, I have
+                                with components that span multiple pages. With increased proficiency in Figma, I
+                                have
                                 gained
                                 new
                                 insights on preserving versions. I aim to document these insights as a standard
                                 operating
                                 procedure (SOP) for future projects.</li>
-                            <li>Different devices and platforms (Android, iOS, mobile, desktop) present variations in
+                            <li>Different devices and platforms (Android, iOS, mobile, desktop) present variations
+                                in
                                 how
                                 websites are displayed, such as the location of the URL bar or the shrinking of the
                                 toolbar.
-                                Therefore, in addition to mastering different screen sizes, it is crucial to consider
+                                Therefore, in addition to mastering different screen sizes, it is crucial to
+                                consider
                                 the
                                 screen
                                 space available after accounting for these elements.</li>
-                            <li>During the design process, even for features yet to be developed, I proactively included
+                            <li>During the design process, even for features yet to be developed, I proactively
+                                included
                                 them in
                                 the design if I believed they would be beneficial for the platform, leaving room for
                                 their
@@ -257,41 +370,15 @@ data-bs-smooth-scroll="true" tabindex="0">
                         </ul>
                     </article>
                 </div>
+            </article>
         </section>
 
-        <section class="other-prj container">
-            <h2>Other projects</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href=artful-cause.html><img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png"
-                                alt="Link to Project Artul Cause"></a>
-                    </li>
-                    <li>
-                        <a href="color-touch.html"><img src="../img/prj/03_Color Touch/ColorTouch_thumb_shadow_02.png"
-                                alt="Link to Project Color Touch"></a>
-                    </li>
-                    <li>
-                        <a href="georifters-game.html"><img
-                                src="../img/prj/01_Georifters/georifters_nintendo_mockup_01.png"
-                                alt="Link to Project Georifters Game"></a>
-                    </li>
-                    <li>
-                        <a href="georfiters-website.html"><img
-                                src="../img/prj/02_Georfiters Game promotional website/georifters_website_thumb.png"
-                                alt="Link to Project Georifters Promotional Website"></a>
-                    </li>
-                    <li>
-                        <a href="order-tracker.html"><img src="../img/prj/04_Order Tracker/order tracker thumb.png"
-                                alt="Link to Project Order Tracker"></a>
-                    </li>
-                    <li>
-                        <a href="roli-restuarant.html"><img src="../img/prj/05_Roli Restuarant/roli - thumb.webp"
-                                alt="Link to Project Roli Restuarant Website"></a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <a href="#">
+            <span class="back-to-top material-symbols-outlined">
+                expand_circle_up
+            </span>
+        </a>
+
     </main>
     <footer>
         <nav>
@@ -313,7 +400,9 @@ data-bs-smooth-scroll="true" tabindex="0">
         <p>All rights reserved</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
