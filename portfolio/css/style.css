@@ -1,4 +1,4 @@
-/*ALL*/
+/*--------------ALL--------------*/
 body {
     background-color: #121212;
     color: #e4e4e4;
@@ -13,13 +13,6 @@ body {
 
 .card .text-muted {
     color: #bcbcbc !important;
-}
-
-ul,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -47,7 +40,33 @@ img {
     color: #7dabb9;
 }
 
-/*All-Header*/
+section {
+    margin: 2.5em 0;
+}
+
+.card,
+.card-header {
+    border-width: 0;
+}
+
+li {
+    margin: 1em 0;
+}
+
+iframe {
+    display: block;
+    width: auto;
+    height: 60vh;
+    margin: 1em auto;
+}
+
+iframe.pc {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/*--------------All-Header--------------*/
 
 header .nav-link {
     padding: 0.5rem;
@@ -67,10 +86,9 @@ header .navbar-nav .nav-link.active {
 
 header img {
     max-width: 5vh;
-    margin: 0.5em;
 }
 
-/*All-Footer*/
+/*--------------All-Footer--------------*/
 
 footer {
     margin: 7em 0 2.5em 0;
@@ -79,6 +97,7 @@ footer {
 footer ul {
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 footer img {
@@ -86,20 +105,15 @@ footer img {
     margin: 0.5em;
 }
 
+footer li {
+    list-style: none;
+}
+
 footer p {
     text-align: center;
 }
 
-section {
-    margin: 2.5em 0;
-}
-
-.card,
-.card-header {
-    border-width: 0;
-}
-
-/* Main */
+/* --------------Main--------------*/
 
 .intro {
     padding: 1em 0;
@@ -131,7 +145,7 @@ section {
     margin: 0;
 }
 
-/*About*/
+/*--------------About--------------*/
 
 .abilities {
     display: flex;
@@ -145,17 +159,24 @@ section {
     color: inherit;
 }
 
-/*Project*/
+/*--------------Project--------------*/
 .prj-overview {
     margin: 0;
     background-color: #e4e4e4;
     color: #121212;
     padding: 0 .75rem;
+    z-index: 1;
 }
 
 .prj-img.card {
     background-color: inherit;
     border-width: 0;
+}
+
+.prj-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .prj h1,
@@ -227,22 +248,44 @@ section {
     text-decoration: underline;
 }
 
+#overview {
+    margin-top: 2em;
+}
+
+#design-system,
+#research,
+#design,
+#refine,
+#rwd,
+#takeaways {
+    margin-top: 6em;
+    padding-top: 1em;
+}
+
 .prj-detail.container {
     margin-top: 0;
+}
+
+.content img {
+    display: block;
+    margin: 1em 0;
 }
 
 .content h2 {
     font-size: 1em;
     font-weight: 700;
-    margin: 2em 0 1.5em 0;
 }
 
 .content h3 {
-    margin: 1.25em 0 0.75em 0;
+    margin: 2em 0 0.75em 0;
 }
 
-.content p {
-    margin: 0 0 3em 0;
+.content h4 {
+    margin: 1em 0 0.75em 0;
+}
+
+.content h5 {
+    margin: 1em 0 0.75em 0;
 }
 
 .material-symbols-outlined {
@@ -252,13 +295,20 @@ section {
         'GRAD' 200,
         'opsz' 48;
     color: #e4e4e4;
-    font-size: 2em !important;
+    font-size: 2.75em !important;
 }
 
 .back-to-top {
     position: fixed;
-    right: 5%;
-    bottom: 5%;
+    right: 0.5em;
+    bottom: 0.5em;
+}
+
+blockquote {
+    padding-left: 1.5em;
+    border-left: 3px solid #e4e4e4;
+    margin: 1.5em;
+    font-size: 1.5em;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -284,6 +334,10 @@ section {
 
     /* Project */
 
+    .content img {
+        margin: 1.5em auto;
+    }
+
     .content .gif {
         width: 20%;
         height: auto;
@@ -292,7 +346,6 @@ section {
     #section-nav {
         display: flex;
     }
-    
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -332,14 +385,13 @@ section {
     }
 
     .content img {
-        width: 70%;
+        width: 80%;
         height: auto;
-        align-content: center;
+        margin: auto;
     }
 
     .content .gif {
         width: 25%;
-        height: auto;
     }
 
     #overview {
@@ -347,6 +399,7 @@ section {
         padding-top: 1em;
     }
 
+    #design-system,
     #research,
     #design,
     #refine,
@@ -361,14 +414,35 @@ section {
         padding-top: 1em;
     }
 
-    #research img {
-        width: 20%;
+    .back-to-top {
+        position: fixed;
+        right: 1.5em;
+        bottom: 1.5em;
     }
-
 
 }
 
 /*X-Large devices (large desktops, 1200px and up)*/
-/* @media (min-width: 1200px) {} */
+@media (min-width: 1200px) {
+    .flex {
+        display: flex;
+    }
+
+    .flex img {
+        display: inline;
+        width: 50%;
+        padding: 0 2em;
+    }
+
+    .flex li {
+        margin: 2em 0;
+    }
+
+    /*infleme freelance*/
+    #mockups li {
+        margin: 1em 0;
+    }
+}
+
 /*XX-Large devices (larger desktops, 1400px and up)*/
 /* @media (min-width: 1400px) {}*/

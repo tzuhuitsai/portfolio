@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sally Tsai</title>
+    <title>Infleme Freelance</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -12,9 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#section-nav" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
     <header class="navbar navbar-expand-sm" data-bs-theme="dark">
         <nav class="container-fluid">
             <ul class="navbar-nav">
@@ -33,18 +35,18 @@
 
     <main class="prj">
         <section class="prj-overview row">
-            <div class="prj-img card col-lg-4">
+            <div class="prj-img card col-lg-5">
                 <img src="../img/prj/07_infleme/thumb.png" class="card-img-top"
-                    alt="Infleme freelance service platform">
+                    alt="Infleme freelance service platform thumbnail">
             </div>
-            <article class="prj-info card-body col-lg-8">
+            <article class="prj-info card-body col-lg-7">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../index.html" class="link">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Project</li>
                     </ol>
                 </nav>
-                <h1 class="card-title">Infleme Freelance</h1>
+                <h1 class="card-title">Infelem Freelance</h1>
                 <p class="prj-type card-text text-muted">Website</p>
                 <p class="prj-sum card-text">Infelem is a freelance service platform that aims to provide a simple and
                     convenient way for
@@ -53,7 +55,6 @@
                     seameless
                     user experience.
                 </p>
-
                 <article class="prj-table">
                     <article class="team card">
                         <h2 class="card-header">Team</h2>
@@ -86,38 +87,23 @@
         </section>
 
         <section class="prj-detail container">
-            <article class="prj-detail row">
-                <nav class="section-nav">
-                    <article class="sec-name">
-                        <div class="dot"></div>
-                        <a href="#overview">Overview</a>
-                    </article>
-                    <article class="sec-name">
-                        <div class="dot"></div>
-                        <a href="#research">Research</a>
-                    </article>
-                    <article class="sec-name">
-                        <div class="dot"></div>
-                        <a href="#design">Design</a>
-                    </article>
-                    <article class="sec-name">
-                        <div class="dot"></div>
-                        <a href="#refine">Refine</a>
-                    </article>
-                    <article class=" sec-name">
-                        <div class="dot"></div>
-                        <a href="#takeaways">Takeaways</a>
-                    </article>
-                </nav>
+            <article class="row">
+                <div class="col-lg-2">
+                    <nav id="section-nav">
+                        <a class href="#overview">Overview</a>
+                        <a class href="#research">Research</a>
+                        <a class href="#design">Design</a>
+                        <a class href="#refine">Refine</a>
+                        <a class href="#takeaways">Takeaways</a>
+                    </nav>
+                </div>
 
-                <article class="content col-lg-10">
-                    <article class="overview" id="overview">
+                <div class="content col-lg-10">
+                    <article id="overview">
                         <h2>Overview</h2>
                         <h3>The problem</h3>
                         <p>The platform has functional capabilities and an information structure, but it lacks
-                            optimization
-                            for
-                            user experience and visual design.</p>
+                            optimization for user experience and visual design.</p>
                         <h3>The goals</h3>
                         <ul>
                             <li>Develop a responsive website that maintains interface consistency, content and function
@@ -127,67 +113,78 @@
                             <li>Produce design documents to ensure visual consistency throughout the project.</li>
                         </ul>
                     </article>
-                    <article class="research" id="research">
+                    <article id="research">
                         <h2>Research</h2>
                         <p>In addition to leveraging our own experience using multiple freelance platforms, we conducted
                             research on various platforms in the market to analyze the strengths and weaknesses of their
                             interface and user flow. Our goal was to make our platform more exceptional.</p>
                         <h3>Ideation</h3>
-                        <p>Prioritizing mobile screen sizes, we conducted quick sketches to explore various layout
-                            possibilities. After careful consideration, we combined the strengths of different layouts
-                            and proceeded to the digital wireframing stage.</p>
-                        <img src="../img/prj/07_infleme/crazy 8.webp" alt="infleme crazy 8 samples">
+                        <div class="flex">
+                            <p>Prioritizing mobile screen sizes, we conducted quick sketches to explore various layout
+                                possibilities. After careful consideration, we combined the strengths of different
+                                layouts
+                                and proceeded to the digital wireframing stage.</p>
+                            <img src="../img/prj/07_infleme/crazy 8.webp" alt="crazy 8 images">
+                        </div>
                     </article>
-                    <article class="design" id="design">
+                    <article id="design">
                         <h2>Starting the design</h2>
                         <h3>Digital Wireframe</h3>
-                        <p>In the digital wireframe, we made adjustments to the layout and information cards to enhance
-                            readability.
-                            We utilized whitespace and font hierarchy to highlight important information. Additionally,
-                            we
-                            designed
-                            a guided tutorial for the project creation process, making it easier for users to get
-                            started
-                            with
-                            step-by-step instructions and text explanations.</p>
-                        <img src="../img/prj/07_infleme/wireframe.webp"
-                            alt="wireframes of infleme freelance service platform">
+                        <div class="flex">
+                            <p>In the digital wireframe, we made adjustments to the layout and information cards to
+                                enhance
+                                readability. We utilized whitespace and font hierarchy to highlight important
+                                information.
+                                Additionally, we designed a guided tutorial for the project creation process, making it
+                                easier for users to get started with step-by-step instructions and text explanations.
+                            </p>
+                            <img src="../img/prj/07_infleme/wireframe.webp"
+                                alt="wireframes of infleme freelance service platform">
+                        </div>
                         <h3>Low-Fidelity Prototype</h3>
                         <p>During the low-fidelity prototype testing, we identified some usability issues.</p>
                         <img src="../img/prj/07_infleme/mobile_lofi-prototype.gif" alt="Gif of Low-Fidelity prototype"
                             class="gif">
+                        <h4>Findings</h4>
+                        <ol>
+                            <li>Certain editing menus could benefit from the inclusion of icons representing the purpose
+                                of each option.</li>
+                            <li>To accommodate future avatar functionality, we suggested adding an avatar setting
+                                feature.</li>
+                            <li>User profiles could include a history of their project engagements to enhance
+                                credibility.</li>
+                        </ol>
                     </article>
-                    <article class="refine" id="refine">
+                    <article id="refine">
                         <h2>Refining the design</h2>
                         <h3>Mockups</h3>
-                        <p>Using Material Design, we created components and color schemes to enhance the visual.
-
-                            In response to feedback from previous meetings, we made adjustments to improve the user
+                        <p>Using Material Design, we created components and color schemes to enhance the visual.</p>
+                        <p>In response to feedback from previous meetings, we made adjustments to improve the user
                             experience:
                         </p>
                         <ul>
-                            <li>In the message settings menu, we added icons to represent the purpose of each
-                                option.
-
+                            <li>
+                                <p>In the message settings menu, we added icons to represent the purpose of each
+                                    option.</p>
                                 <img src="../img/prj/07_infleme/finding solution 1_chat setting.webp"
                                     alt="Added icons to buttons">
                             </li>
-                            <li>Within user settings, we introduced an avatar setting feature and replaced usernames
-                                with
-                                avatars in
-                                achievement cards.
+                            <li>
+                                <p>Within user settings, we introduced an avatar setting feature and replaced
+                                    usernames
+                                    with avatars in achievement cards.</p>
                                 <img src="../img/prj/07_infleme/finding solution 1_achievement.png"
                                     alt="Use avatar instead of user id could help we maintain the right space of UI">
                             </li>
-                            <li>On the user profile, we added a display of project engagement history. Considering
-                                experienced
-                                freelancers may have multiple entries, we opted for showing the total number of
-                                projects,
-                                and
-                                show 5
-                                of them in each pagination. We also included a display settings section for project
-                                engagement
-                                records in user setting.
+                            <li>
+                                <p>On the user profile, we added a display of project engagement history.
+                                    Considering
+                                    experienced freelancers may have multiple entries, we opted for showing the
+                                    total
+                                    number
+                                    of projects, and show 5 of them in each pagination. We also included a display
+                                    settings
+                                    section for project engagement records in user setting.</p>
                                 <img src="../img/prj/07_infleme/finding solution 1_engagement.png"
                                     alt="Added project engagement history to user porfile">
                             </li>
@@ -196,46 +193,48 @@
                         <img src="../img/prj/07_infleme/RWD sample.png"
                             alt="Home page design in PC screen size and mobile screen size">
                         <h3>High-fidelity prototype</h3>
-                        <p>After testing the high-fidelity prototype, we identified further areas for improvement.</p>
+                        <p>After testing the high-fidelity prototype, we identified further areas for improvement.
+                        </p>
                         <img src="../img/prj/07_infleme/mobile_hifi prototype 1.gif"
-                            alt="high-fidelity prototype of infleme freelance servuce platform" class="gif">
+                            alt="high-fidelity prototype of infleme freelance service platform" class="gif">
                         <h4>Findings</h4>
                         <ol>
                             <li>It was difficult to determine which conversation window was currently displayed.</li>
                             <li>The purposal button for projects lacked sufficient emphasis.</li>
                             <li>The presentation style of project listings did not encourage users to click.
-                                Consideration
-                                was
-                                given to changing to a card-based layout.</li>
+                                Consideration was given to changing to a card-based layout.</li>
                         </ol>
                         <h3>Refine Hi-Fi Prototype</h3>
                         <p>Based on the above findings, we made further updates and arrived at the final version of the
                             prototype.</p>
                         <ul>
-                            <li>Improve the purposal button
+                            <li>
+                                <p>Improve the purposal button</p>
                                 <img src="../img/prj/07_infleme/finding solution 2_purposal button.png"
-                                    alt="Change the color choice to increase color contrast on purposal button.">
+                                    alt="Improve the purposal button">
                             </li>
-                            <li>Redesign project engagement setting to prevent a list of a experienced designer is too
-                                logn
-                                to
-                                navigate.
-                                <img src="../img/prj/07_infleme/pc_hifi_project engagement.png"
-                                    alt="Redesign the table of porject engagement history for longer table entries.">
+                            <li>
+                                <p>Redesign project engagement setting to prevent a list of a experienced designer is
+                                    too
+                                    logn to navigate.</p>
+                                <img src="../img/prj/07_infleme/finding solution 1_engagement.png"
+                                    alt="Redesign project engagement setting to prevent a list of a experienced designer is too long to navigate.">
                             </li>
                         </ul>
                         <h3>Dark and Light Mode</h3>
                         <p>We designed the website to be responsive, accommodating both dark and light modes.</p>
-                        <img src="../img/prj/07_infleme/dark-light mode.png" alt="Dark and Light mode of the platform">
+                        <img src="../img/prj/07_infleme/dark-light mode.png"
+                            alt="We designed the website to be responsive, accommodating both dark and light modes.">
                         <h3>Design Documents</h3>
-                        <p>For this project, we based the design on the Material Design framework and incorporated the
-                            client's
-                            specified colors. Finally, I compiled the design components, fonts, colors, and layouts used
-                            during
-                            the design process into design documents, which were submitted to the client along with
-                            other
-                            relevant materials.</p>
-                        <img src="../img/prj/07_infleme/Design Doc.png" alt="Dsign Documents">
+                        <div class="flex">
+                            <p>For this project, we based the design on the Material Design framework and incorporated
+                                the
+                                client's specified colors. Finally, I compiled the design components, fonts, colors, and
+                                layouts used during the design process into design documents, which were submitted to
+                                the
+                                client along with other relevant materials.</p>
+                            <img src="../img/prj/07_infleme/Design Doc.png" alt="Design Document">
+                        </div>
                         <h3>Accessibility considerations</h3>
                         <p>During the website development process, we consistently considered accessibility.</p>
                         <ol>
@@ -244,150 +243,43 @@
                             <li>We followed hierarchy principles in organizing the content of the text.</li>
                         </ol>
                     </article>
-                    <article class="takeaways" id="takeaways">
-                        <h2>Going forward</h2>
-                        <h3>Takeaways</h3>
-                        <h4>Impact</h4>
+                    <article id="takeaways">
+                        <h2>Takeaways</h2>
+                        <h3>Impact</h3>
                         <p>With the conclusion of the project, the UI/UX design phase has come to an end. The subsequent
                             development will be carried out by the client.</p>
-                        <h4>What I learned</h4>
+                        <h3>What I learned</h3>
                         <ul>
                             <li>Through the use of the Material Design system in this project, I gained a deeper
-                                understanding
-                                of its principles. In future web design projects, I aim to apply this system more
-                                effectively
-                                and efficiently, ensuring visual consistency and readability.</li>
+                                understanding of its principles. In future web design projects, I aim to apply this
+                                system more effectively and efficiently, ensuring visual consistency and readability.
+                            </li>
                             <li> I developed a habit of preserving versions at each stage of the design process. While
-                                using
-                                components to handle recurring elements facilitated efficiency, it posed challenges when
-                                working
-                                with components that span multiple pages. With increased proficiency in Figma, I have
-                                gained
-                                new
-                                insights on preserving versions. I aim to document these insights as a standard
-                                operating
-                                procedure (SOP) for future projects.</li>
+                                using components to handle recurring elements facilitated efficiency, it posed
+                                challenges when working with components that span multiple pages. With increased
+                                proficiency in Figma, I have gained new insights on preserving versions. I aim to
+                                document these insights as a standard operating procedure (SOP) for future projects.
+                            </li>
                             <li>Different devices and platforms (Android, iOS, mobile, desktop) present variations in
-                                how
-                                websites are displayed, such as the location of the URL bar or the shrinking of the
-                                toolbar.
-                                Therefore, in addition to mastering different screen sizes, it is crucial to consider
-                                the
-                                screen
-                                space available after accounting for these elements.</li>
+                                how websites are displayed, such as the location of the URL bar or the shrinking of the
+                                toolbar. Therefore, in addition to mastering different screen sizes, it is crucial to
+                                consider the screen space available after accounting for these elements.</li>
                             <li>During the design process, even for features yet to be developed, I proactively included
-                                them in
-                                the design if I believed they would be beneficial for the platform, leaving room for
-                                their
-                                implementation. This approach eliminates the need for redesigning the interface when
-                                such
-                                features are developed.</li>
+                                them in the design if I believed they would be beneficial for the platform, leaving room
+                                for their implementation. This approach eliminates the need for redesigning the
+                                interface when such features are developed.</li>
                         </ul>
                     </article>
-                </article>
+                </div>
             </article>
         </section>
 
-        <section class="other-prj container">
-            <h2>Other projects</h2>
-            <nav class="prj-link">
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
+        <a href="#">
+            <span class="back-to-top material-symbols-outlined">
+                expand_circle_up
+            </span>
+        </a>
 
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
-
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
-
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
-
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
-
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
-
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
-
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png" class="card-img"
-                        alt="Link to Project Artul Cause">
-
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Artful Cause</h5>
-                    </div>
-                </div>
-
-
-
-                <!-- <ul>
-                    <li>
-                        <a href=artful-cause.html><img src="../img/prj/06_Artful Cause/Artful Cause - cover img.png"
-                                alt="Link to Project Artul Cause"></a>
-                    </li>
-                    <li>
-                        <a href="color-touch.html"><img src="../img/prj/03_Color Touch/ColorTouch_thumb_shadow_02.png"
-                                alt="Link to Project Color Touch"></a>
-                    </li>
-                    <li>
-                        <a href="georifters-game.html"><img
-                                src="../img/prj/01_Georifters/georifters_nintendo_mockup_01.png"
-                                alt="Link to Project Georifters Game"></a>
-                    </li>
-                    <li>
-                        <a href="georfiters-website.html"><img
-                                src="../img/prj/02_Georfiters Game promotional website/georifters_website_thumb.png"
-                                alt="Link to Project Georifters Promotional Website"></a>
-                    </li>
-                    <li>
-                        <a href="order-tracker.html"><img src="../img/prj/04_Order Tracker/order tracker thumb.png"
-                                alt="Link to Project Order Tracker"></a>
-                    </li>
-                    <li>
-                        <a href="roli-restuarant.html"><img src="../img/prj/05_Roli Restuarant/roli - thumb.webp"
-                                alt="Link to Project Roli Restuarant Website"></a>
-                    </li>
-                </ul> -->
-            </nav>
-        </section>
     </main>
     <footer>
         <nav>

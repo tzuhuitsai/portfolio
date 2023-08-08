@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roli Burrito</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#section-nav" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
+    <header class="navbar navbar-expand-sm" data-bs-theme="dark">
+        <nav class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+            </ul>
+            <a href="../index.html" class="logo navbar-brand">
+                <img src="../img/TTH.png" alt="Sally Tsai's personal logo">
+            </a>
+        </nav>
+    </header>
+
+    <main class="prj">
+        <section class="prj-overview row">
+            <div class="prj-img card col-lg-5">
+                <img src="../img/prj/04_Order Tracker/order tracker thumb.png" class="card-img-top"
+                    alt="Order tracker thumbnail">
+            </div>
+            <article class="prj-info card-body col-lg-7">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html" class="link">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Project</li>
+                    </ol>
+                </nav>
+                <h1 class="card-title">Order Tracker</h1>
+                <p class="prj-type card-text text-muted">Mobile App</p>
+                <p class="prj-sum card-text">Order Tracker is an app aiming at helping small business owners to track
+                    their packages efficiently and provide insights that could help with business decisions based on
+                    collected data.</p>
+                <article class="prj-table">
+                    <article class="team card">
+                        <h2 class="card-header">Team</h2>
+                        <article class="card-body">
+                            <p class="card-text">Sally Tsai</p>
+                        </article>
+                    </article>
+                    <article class="role card">
+                        <h2 class="card-header">My Role</h2>
+                        <article class="card-body">
+                            <p class="card-text">User Research</p>
+                            <p class="card-text">UX Design</p>
+                            <p class="card-text">UI Design</p>
+                            <p class="card-text">Prototype</p>
+                            <p class="card-text">Wireframe</p>
+                        </article>
+                    </article>
+                    <article class="tool card">
+                        <h2 class="card-header">Tool</h2>
+                        <article class="card-body">
+                            <p class="card-text">Figma</p>
+                        </article>
+                    </article>
+                    <article class="duration card">
+                        <h2 class="card-header">Duration</h2>
+                        <article class="card-body">
+                            <p class="card-text">15 Months</p>
+                        </article>
+                    </article>
+                </article>
+            </article>
+        </section>
+
+        <section class="prj-detail container">
+            <article class="row">
+                <div class="col-lg-2">
+                    <nav id="section-nav">
+                        <a class href="#overview">Overview</a>
+                        <a class href="#research">Research</a>
+                        <a class href="#design">Design</a>
+                        <a class href="#refine">Refine</a>
+                        <a class href="#design-system">Design System</a>
+                        <a class href="#takeaways">Takeaways</a>
+                    </nav>
+                </div>
+
+                <div class="content col-lg-10">
+                    <article id="overview">
+                        <h2>Overview</h2>
+                        <h3>The problem</h3>
+                        <p>As I worked in a ecommercial company, tracking numerous orders to make sure all the customers
+                            had received their products is necessary every day. However, it is a burden for small
+                            businesses to purchase a system that tracks orders automatically, and manual operation could
+                            be inefficient and fallible.</p>
+                        <h3>The goals</h3>
+                        <ul>
+                            <li>Allow users to import orders by multiple methods.</li>
+                            <li>Allow users to find orders with specific condition easier.</li>
+                            <li>Generate statistics data from collected data.</li>
+                            <li>Make it user-friendly.</li>
+                        </ul>
+                    </article>
+                    <article id="research">
+                        <h2>Research</h2>
+                        <p>Before dived into the design phase, I interviewed a few storekeepers who sell their product
+                            either online or physical.These storekeepers consider it is important to know the shipment
+                            status in real time, and want a system that could simplify the process of order tracking.
+                        </p>
+                        <blockquote class="blockquote">
+                            <p>The app should be able to help users monitor their orders easily, save time cost and
+                                generate statistics.</p>
+                        </blockquote>
+                        <h3>Pain points</h3>
+                        <ul>
+                            <li>
+                                <span><strong>Be able to understand the situation as soon as possible.</strong></span>
+                                <p>Use simple statistics to help users get onboard at a glance.</p>
+                            </li>
+                            <li>
+                                <span><strong>Be able to find desired orders quickly</strong></span>
+                                <p>Use filters to help users find orders by conditions. </p>
+                            </li>
+                            <li>
+                                <span><strong>End orders automatically</strong></span>
+                                <p>Ending an order after delivered automatically could simplify the process.</p>
+                            </li>
+                        </ul>
+                        <h3>Persona</h3>
+                        <h4>‍Problem statement</h4>
+                        <p>‍Yoshida is a local thrift store owner who needs to organize a lot of orders and solve
+                            delivery issues if there are any.</p>
+                        <img src="../img/prj/04_Order Tracker/portfolio_ordertracker_persona_yoshida.svg" alt="persona">
+                        <h5>Yoshida's Goals</h5>
+                        <ul>
+                            <li>Import orders according to where the order is submitted.</li>
+                            <li>Notification of shipments with issues.</li>
+                            <li>Sort function, or maybe arrange the sequence manually.</li>
+                        </ul>
+                        <h5>What make Yoshida frustrated</h5>
+                        <ul>
+                            <li>“I couldn’t change the sequence of my orders, and it is hard for me to prepare the
+                                product this way.”</li>
+                            <li>“If there is an error, I need to know whether the package is missing and what I could do
+                                to solve it.”</li>
+                            <li>“It would be nice if I can import my order numbers by excel files or by scanning booking
+                                notes.”</li>
+                        </ul>
+                        <h4>User journey map</h4>
+                        <p>Yoshida organizes all his package data with excel or google Sheets on his computer. He needs
+                            to track the shipment status by typing order numbers on carrier websites and solve problems
+                            if a shipment status shows an error.</p>
+                        <img src="../img/prj/04_Order Tracker/Google UX Design Certificate - User Journey Map_Yoshida.webp"
+                            alt="User Journey map">
+                    </article>
+                    <article id="design">
+                        <h2>Wireframe and Prototype</h2>
+                        <h3>Wireframe</h3>
+                        <h4>Paper Wireframe</h4>
+                        <div class="flex">
+                            <p>To quickly generate ideas, first, I use hand drawing to make several versions of each
+                                page.
+                                Secondly, I would pick out the parts that satisfy the user's need the most for each
+                                page.
+                                (Parts with star marks in the picture.)<br>
+                                Combining all the marked areas, we can get a refined version of each page.</p>
+                            <img src="../img/prj/04_Order Tracker/paper_wireframe.jpg"
+                                alt="sitemap of Roli Restuarant website">
+                        </div>
+                        <h3>Digital Wireframe</h3>
+                        <div class="flex">
+                            <p>I use Figma to turn my paper wireframes into digital ones. Turning paper wireframes into
+                                digital ones isn't only a necessary step to create a low-fidelity prototype but a chance
+                                to examine if the selected parts are reasonable.</p>
+                            <img
+                                src="../img/prj/04_Order Tracker/Google UX Design Certificate_Digital Wireframe_Page01.webp">
+                        </div>
+                        <h3>Low-Fidelity Prototypes</h3>
+                        <iframe
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFIwpzhuaaAkWkqIE71Hhwd%2FOrderTracking%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D709-191%26viewport%3D661%252C395%252C0.26%26t%3DSliy6ZrWNJK6JFeH-1%26scaling%3Dscale-down%26starting-point-node-id%3D709%253A191%26mode%3Ddesign"
+                            allowfullscreen></iframe>
+                        <h3>Usability Test</h3>
+                        <p>In the usability tasks, I realized that mark functions should be easier to find, and the
+                            chart doesn’t work as well as expected.</p>
+                        <h4>Round 1 findings</h4>
+                        <ol>
+                            <li>Users ignore the chart quite often.</li>
+                            <li>Mark function is too hard to find. It could be more intuitive.</li>
+                            <li>It would be more efficient if the system directly told users which orders to check.</li>
+                        </ol>
+                        <h4>Round 2 findings</h4>
+                        <ol>
+                            <li>Analyzation might be redundant for our TA.</li>
+                            <li>Shrinking page titles allow us to use the screen space more efficiently.</li>
+                            <li>Add delete function to the app.</li>
+                        </ol>
+                    </article>
+                    <article id="refine">
+                        <h2>Mockup and High Fidelity Prototype</h2>
+                        <h3>Improvements based on the usability study</h3>
+                        <p>Based on the finding of the usability study, there are some improvements of the refined
+                            mockup. For example, I removed the chart which didn’t work well in the usability study.
+                            On the contrary, I added a tab that filters all orders with issues. In addition, before
+                            the usability study, the mark function hid on the order detail page; in the current
+                            version, users could mark an order directly on the home page.</p>
+                        <img src="../img/prj/04_Order Tracker/Google UX Design Certificate - Mockup 01.webp"
+                            alt="Improvements based on the usability study">
+                        <h3>Refine the design</h3>
+                        <p>Beside improvements based on the usability study, I also made other improvements on the
+                            UI visual. For example, the page title shrinks so there is more negative space.</p>
+                        <p>I also try to apply Gestalt Principles and design system.</p>
+                        <iframe
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFIwpzhuaaAkWkqIE71Hhwd%2FOrderTracking%3Fpage-id%3D415%253A51%26type%3Ddesign%26node-id%3D739-678%26viewport%3D303%252C430%252C0.15%26t%3Dz6bIi3C2uJwHqutb-1%26scaling%3Dscale-down%26starting-point-node-id%3D415%253A855%26mode%3Ddesign"
+                            allowfullscreen></iframe>
+                        <img src="../img/prj/04_Order Tracker/Google UX Design Certificate - Refined Mockup.webp"
+                            alt="Refine pages">
+                        <img src="../img/prj/04_Order Tracker/Google UX Design Certificate - High Fidelity Prototype gif.gif"
+                            alt="High-fidelity Prototype gif">
+                        <h3>Accessibility Considerations</h3>
+                        <ul>
+                            <li>Not only use color to indicate the shipment status but include icons, so people who
+                                couldn’t identify color could know the shipment status.</li>
+                            <li>The color contrast would fit the WCAG accessibility requirements.</li>
+                            <li>Add alternative text to icons.</li>
+                            <li>Gesture would not be the only way to complete a task.</li>
+                        </ul>
+                    </article>
+                    <article id="design-system">
+                        <h2>Design System</h2>
+                        <img src="../img/prj/04_Order Tracker/Google UX Design Certificate - Design System.webp"
+                            alt="Design System">
+                    </article>
+                    <article id="takeaways">
+                        <h2>Takeaways</h2>
+                        <h3>Impact</h3>
+                        <p>Using technology to simplify the process is necessary for a business. The app could save
+                            small enterprise owners time on repetitive work and make more profit.</p>
+                        <h3>What I learned</h3>
+                        <p>The interview and usability studies are very crucial in the design. Sometimes we might be
+                            resistant to changes, but we have to keep in mind that putting users up front is the
+                            main idea of UX.</p>
+                    </article>
+                </div>
+            </article>
+        </section>
+
+        <a href="#">
+            <span class="back-to-top material-symbols-outlined">
+                expand_circle_up
+            </span>
+        </a>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/tsaitzuhui/"><img class="sms" src="../img/LI-In-White.png"
+                            alt="Link to Sally Tsai's LinkedIn"></a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/tsai-tzu-hui"><img src="../img/icon_behance.png"
+                            alt="Link to Sally Tsai's Behance"></a>
+                </li>
+                <li>
+                    <a href="mailto:tzuhui.tsai@gmail.com">
+                        <img src="../img/envelope.png" alt="Send an email to Sally Tsai"></a>
+                </li>
+            </ul>
+        </nav>
+        <p>All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
