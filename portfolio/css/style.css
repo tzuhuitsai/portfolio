@@ -184,6 +184,15 @@ footer p {
     text-align: center;
 }
 
+.prj-info svg {
+    display: flex;
+    margin: auto;
+    width: 1.5em;
+    height: 1.5em;
+    color: #00c6c6;
+    align-self: center;
+}
+
 .prj-info.card-body {
     background-color: inherit;
     color: inherit;
@@ -365,6 +374,10 @@ blockquote {
         text-align: left;
     }
 
+    .prj-info svg {
+        margin: 0;
+    }
+
     .prj-info {
         padding: 0 2em;
     }
@@ -387,7 +400,6 @@ blockquote {
     .content img {
         width: 80%;
         height: auto;
-        margin: auto;
     }
 
     .content .gif {
