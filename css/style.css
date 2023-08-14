@@ -56,7 +56,7 @@ li {
 iframe {
     display: block;
     width: auto;
-    height: 60vh;
+    height: 85vh;
     margin: 1em auto;
 }
 
@@ -347,8 +347,12 @@ blockquote {
         margin: 1.5em auto;
     }
 
+    img.thin {
+        width: 30%;
+    }
+
     .content .gif {
-        width: 20%;
+        width: 50%;
         height: auto;
     }
 
@@ -403,7 +407,8 @@ blockquote {
     }
 
     .content .gif {
-        width: 25%;
+        width: 20vw;
+        height: fit-content;
     }
 
     #overview {
@@ -432,10 +437,6 @@ blockquote {
         bottom: 1.5em;
     }
 
-}
-
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
     .flex {
         display: flex;
     }
@@ -449,6 +450,21 @@ blockquote {
     .flex li {
         margin: 2em 0;
     }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.thin {
+        width: 30%;
+    }
+
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 
     /*infleme freelance*/
     #mockups li {
