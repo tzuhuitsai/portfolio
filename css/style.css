@@ -421,7 +421,11 @@ blockquote {
     #design,
     #refine,
     #rwd,
-    #takeaways {
+    #takeaways,
+    #goals,
+    #sitemaps,
+    #wireflow,
+    #ui {
         margin-top: 6em;
         padding-top: 1em;
     }
