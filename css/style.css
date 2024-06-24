@@ -257,7 +257,9 @@ footer p {
     text-decoration: underline;
 }
 
-#overview {
+#overview,
+#background,
+#goals {
     margin-top: 2em;
 }
 
