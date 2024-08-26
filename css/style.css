@@ -257,22 +257,6 @@ footer p {
     text-decoration: underline;
 }
 
-/*#overview,
-#background,
-#goals {
-    margin-top: 2em;
-}*/
-
-#design-system,
-#research,
-#design,
-#refine,
-#rwd,
-#takeaways {
-    margin-top: 6em;
-    padding-top: 1em;
-}
-
 .prj-detail.container {
     margin-top: 0;
 }
@@ -285,10 +269,11 @@ footer p {
 .content h2 {
     font-size: 1em;
     font-weight: 700;
+    margin-top: 4em;
 }
 
 .content h3 {
-    margin: 2em 0 0.75em 0;
+    margin: 1.5em 0 0.75em 0;
 }
 
 .content h4 {
@@ -400,7 +385,7 @@ blockquote {
     }
 
     .content h2 {
-        margin: 2em 0 1em 0;
+        margin: 4em 0 1em 0;
     }
 
     .content img {
@@ -411,31 +396,6 @@ blockquote {
     .content .gif {
         width: 20vw;
         height: fit-content;
-    }
-
-    #overview {
-        margin-top: 0;
-        padding-top: 1em;
-    }
-/*
-    #design-system,
-    #research,
-    #design,
-    #refine,
-    #rwd,
-    #takeaways,
-    #goals,
-    #sitemaps,
-    #wireflow,
-    #hifi-prototype,
-    #ui {
-        margin-top: 6em;
-        padding-top: 1em;
-    }
-*/
-    #overview h2 {
-        margin-top: 2em;
-        padding-top: 1em;
     }
 
     .back-to-top {
