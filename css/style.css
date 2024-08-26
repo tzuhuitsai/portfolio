@@ -19,7 +19,7 @@ h1 {
     font-size: 2.5em;
     line-height: 1.6em;
     font-weight: 700;
-    padding-bottom: 0.5em;
+    /*padding-bottom: 0.5em;*/
 }
 
 h2 {
@@ -257,11 +257,11 @@ footer p {
     text-decoration: underline;
 }
 
-#overview,
+/*#overview,
 #background,
 #goals {
     margin-top: 2em;
-}
+}*/
 
 #design-system,
 #research,
@@ -417,7 +417,7 @@ blockquote {
         margin-top: 0;
         padding-top: 1em;
     }
-
+/*
     #design-system,
     #research,
     #design,
@@ -427,11 +427,12 @@ blockquote {
     #goals,
     #sitemaps,
     #wireflow,
+    #hifi-prototype,
     #ui {
         margin-top: 6em;
         padding-top: 1em;
     }
-
+*/
     #overview h2 {
         margin-top: 2em;
         padding-top: 1em;
