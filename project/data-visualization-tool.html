@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSS Promotional Website</title>
+    <title>Data Visualization SaaS Editor</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -36,8 +36,8 @@
     <main class="prj">
         <section class="prj-overview row">
             <div class="prj-img card col-lg-5">
-                <img src="../img/prj/08_fiadigi/one-page-website_thumb.webp" class="card-img-top"
-                    alt="MSS promotional website">
+                <img src="../img/prj/12_Data Visualization SaaS Tool/thumb.png" class="card-img-top"
+                     alt="Data Visualization SaaS Editor">
             </div>
             <article class="prj-info card-body col-lg-7">
                 <nav aria-label="breadcrumb">
@@ -46,16 +46,19 @@
                         <li class="breadcrumb-item active" aria-current="page">Project</li>
                     </ol>
                 </nav>
-                <h1 class="card-title">MSS Promotional Website</h1>
-                <p class="prj-type card-text text-muted">Website</p>
-                <p class="prj-sum card-text">An One-page website which introduce the Medical Schedule System.</p>
+                <h1 class="card-title">Data Visualization SaaS Editor</h1>
+                <p class="prj-type card-text text-muted">SaaS Product</p>
+                <p class="prj-sum card-text">
+                    To address market demand, we aimed to create a dedicated tool to handle the extensive requirements for situation room setups. This tool would allow for clear role delineation and collaboration among various project members. Additionally, we planned to leverage cloud technology to develop this product as a SaaS offering.<br />
+                    * This project is under a Non-Disclosure Agreement (NDA). For more details, please feel free to contact me.
+                </p>
                 <article class="prj-table">
-                    <article class="team card">
-                        <h2 class="card-header">Team</h2>
+                    <!--<article class="team card">
+                        <h2 class="card-header">team</h2>
                         <article class="card-body">
-                            <p class="card-text">Freelance</p>
-                        </article>
-                    </article>
+                            <p class="card-text">nda</p>
+                     </article>
+                    </article>-->
                     <article class="role card">
                         <h2 class="card-header">My Role</h2>
                         <article class="card-body">
@@ -72,7 +75,7 @@
                     <article class="duration card">
                         <h2 class="card-header">Duration</h2>
                         <article class="card-body">
-                            <p class="card-text">3 days </p>
+                            <p class="card-text">8 months </p>
                         </article>
                     </article>
                 </article>
@@ -81,18 +84,81 @@
 
         <section class="prj-detail container">
             <article class="row">
-                <div class="content">
-                    <article>
-                        <iframe
-                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGUGaqZbqfGfdO3oDOW4tkT%2FOne-page-website-design-01%3Fpage-id%3D173%253A144%26type%3Ddesign%26node-id%3D173-228%26viewport%3D298%252C105%252C0.09%26t%3DT9A8S2EDXirgA0A5-1%26scaling%3Dscale-down%26starting-point-node-id%3D173%253A228%26mode%3Ddesign"
-                            allowfullscreen class="pc">
-                            <figure>Interactive Prototype</figure>
-                        </iframe>
-                        <p>The client wanted a one-page website to showcase their services. I designed and developed a
-                            website with a hand-drawn visual style that matched their brand identity and personality. I
-                            also created an interactive prototype with motion graphics to demonstrate the functionality
-                            and user experience of the website.</p>
-                        <img src="../img/prj/08_fiadigi/one-page-website.webp" alt="UI design">
+                <div class="col-lg-2">
+                    <nav id="section-nav">
+                        <a class href="#research">Research</a>
+                        <a class href="#ta">Target Audience</a>
+                        <a class href="#challenges">Challenges</a>
+                        <a class href="#solutions">Solutions</a>
+                        <a class href="#benefits">Benefits</a>
+                        <a class href="#takeaways">Takeaways</a>
+                    </nav>
+                </div>
+
+                <div class="content col-lg-10">
+                    <article id="research">
+                        <h2>Research</h2>
+                        <p>I conducted a thorough analysis of current data visualization and BI products available on the market, focusing on their strengths, weaknesses, features, and market positioning. Most products either do not offer or only provide basic 3D and GIS functionalities but excel in data analysis capabilities. Generally, these products have a wide variety of chart types. Given our product’s focus on situation rooms, we identified the following features as our key highlights:</p>
+                        <ul>
+                            <li>API Integration</li>
+                            <li>GIS functions</li>
+                            <li>3D functions</li>
+                            <li>Triggered events</li>
+                        </ul>
+                    </article>
+                    <article id="ta">
+                        <h2>Target Audience</h2>
+                        <ul>
+                            <li>
+                                Corporate Departments: These users have clear role delineations and require ongoing maintenance of their situation rooms. They need their own domains and must adhere to branding guidelines and shared assets.
+                            </li>
+                            <li>
+                                Studios: With more flexible role boundaries, studios need adaptable permission settings. Each project has its own client, necessitating functionality for external project sharing.
+                            </li>
+                            <li>
+                                Freelancers: Freelancers may not possess all the necessary skills. Supportive tools in specific areas would greatly enhance their work efficiency.
+                            </li>
+                        </ul>
+
+                    </article>
+                    <article id="challenges">
+                        <h2>Challenges</h2>
+                        <ul>
+                            <li>
+                                Designing for diverse use cases requires offering users significant freedom.
+                            </li>
+                            <li>
+                                To facilitate smooth collaboration among different roles, we needed to design role-specific functionalities and permissions, along with robust version control.
+                            </li>
+                            <li>
+                                Handling multiple data sources and ensuring data security were crucial.
+                            </li>
+                            <li>The 3D and 2D components in the situation room must respond interactively to data changes and user interactions, such as displaying pop-ups or changing component appearances.</li>
+                            <li>Given the various possibilities, the interface needed to be clear to prevent user confusion.</li>
+                        </ul>
+
+                    </article>
+                    <article id="solutions">
+                        <h2>Solutions</h2>
+                        <ul>
+                            <li>
+                                Role-Based Access Control (RBAC): We implemented a system with workspace owners, administrators, designers, and developers. This setup ensures strict control over project visibility, data sources, and assets, managed by the workspace administrators.
+                            </li>
+                            <li>
+                                Version Control: Unlike typical cloud editors, we introduced a testing environment. Users can complete testing in this environment before pushing versions to the production environment. This, combined with version control, aids corporate departments in iterating and refining their dashboards.
+                            </li>
+                            <li>
+                                User-Specific Design: We created various visual styling tools, enabling users without design expertise to create visually appealing interfaces that adhere to design standards. An intuitive process for creating interactive components allows non-programmers to set up complex interactions. Additionally, DNS settings enable enterprise users to publish projects using their custom domains.
+                            </li>
+                        </ul>
+                    </article>
+                    <article id="benefits">
+                        <h2>Benefits</h2>
+                        <p>This tool provides tailored solutions for individual users, studios, and corporate departments. Designers can complete projects independently, while clear collaboration features support team efforts. Engineers working solo also benefit from visual enhancement tools, saving time on color adjustments and ensuring visual consistency. Adding 3D elements to dashboards not only enhances visual appeal but also helps users better understand the data being observed.</p>
+                    </article>
+                    <article id="takeaways">
+                        <h2>Takeaways</h2>
+                        <p>This has been the most complex project I've worked on so far. As the sole UI/UX Designer, I had significant freedom and decision-making power to implement my ideas on user experience and product design. However, this also meant considering numerous details. Designing a SaaS product requires balancing user needs with technical constraints.</p>
                     </article>
                 </div>
             </article>
