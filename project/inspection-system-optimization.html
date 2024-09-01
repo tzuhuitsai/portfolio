@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection System Optimization</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#section-nav" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
+    <header class="navbar navbar-expand-sm" data-bs-theme="dark">
+        <nav class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+            </ul>
+            <a href="../index.html" class="logo navbar-brand">
+                <img src="../img/TTH.png" alt="Sally Tsai's personal logo">
+            </a>
+        </nav>
+    </header>
+
+    <main class="prj">
+        <section class="prj-overview row">
+            <div class="prj-img card col-lg-5">
+                <img src="../img/prj/08_fiadigi/one-page-website_thumb.webp" class="card-img-top"
+                    alt="MSS promotional website">
+            </div>
+            <article class="prj-info card-body col-lg-7">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html" class="link">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Project</li>
+                    </ol>
+                </nav>
+                <h1 class="card-title">Inspection System Optimization</h1>
+                <p class="prj-type card-text text-muted">RWD website/App</p>
+                <p class="prj-sum card-text">This platform allows inspection personnel to report inspection results on-site and provides tracking for abnormal situations. It is available in both web and native app versions, with the web version additionally tailored for desktop and tablet sizes. Users already have existing websites and apps in use, so the scope of the project includes visual design and user experience optimization. <br>
+                * This project is under a Non-Disclosure Agreement (NDA).
+                </p>
+                <article class="prj-table">
+                    <!-- <article class="team card">
+                        <h2 class="card-header">Team</h2>
+                        <article class="card-body">
+                            <p class="card-text">Freelance</p>
+                        </article>
+                    </article> -->
+                    <article class="role card">
+                        <h2 class="card-header">My Role</h2>
+                        <article class="card-body">
+                            <p class="card-text">UI/UX design</p>
+                        </article>
+                    </article>
+                    <article class="tool card">
+                        <h2 class="card-header">Tool</h2>
+                        <article class="card-body">
+                            <p class="card-text">Photoshop</p>
+                            <p class="card-text">Figma</p>
+                        </article>
+                    </article>
+                    <article class="duration card">
+                        <h2 class="card-header">Duration</h2>
+                        <article class="card-body">
+                            <p class="card-text">14 days </p>
+                        </article>
+                    </article>
+                </article>
+            </article>
+        </section>
+
+        <section class="prj-detail container">
+            <article class="row">
+                <div class="col-lg-2">
+                    <nav id="section-nav">
+                        <a class href="#challenge">Challenge</a>
+                        <a class href="#solution">Solution</a>
+                        <a class href="#benefits">Benefits</a>
+                        <a class href="#takeaways">Takeaways</a>
+                    </nav>
+                </div>
+
+                <div class="content col-lg-10">
+                    <article id="challenge">
+                        <h2>Challenge</h2>
+                        <ul>
+                            <li>The original table display was fixed in width and height, not adjusting to different screen sizes.</li>
+                            <li>The devices used on-site by staff are mostly vertical tablets or mobile phones, rather than desktops.</li>
+                            <li>Although users wanted me to optimize the overall user experience, this platform was already in operation before we joined. Thus, there was considerable resistance when communicating changes to the user flow.</li>
+                            
+                        </ul>
+                    </article>
+                    <article id="solution">
+                        <h2>Solution</h2>
+                        <ul>
+                            <li>To avoid horizontal scrolling to view table information, I adjusted to a column design to adapt to different screen sizes and set overflowing information to wrap. </li>
+                            <li>On the vertical tablet interface, I changed the original table to display information using info cards. Although it cannot provide quick same-column browsing like a table, it avoids horizontal scrolling. Paired with detailed filters, it effectively balances user experience and information browsing functionality.</li>
+                            <li>In the app's usage flow, we implement more of mobile device features such as common mobile gestures (long press to select, tap blank space to exit, etc.)</li>
+                        </ul>
+                    </article>
+
+                    <article id="benefits">
+                        <h2>Benefits</h2>
+                        <p>The most favored design by users in this project was the login screen we designed for them. The design concept used the shapes and lines of the project itself, paired with stable colors, keeping the palette simple to make the screen look both designed and formal. This design allowed users to set the visual style for future series projects.</p>
+                    </article>
+                    <article id="takeaways">
+                        <h2>Takeaways</h2>
+                        <p>This project was unique in that it was mainly used on tablets, making the design process very refreshing. In user experience optimization, it was also unique in focusing on a group less familiar with digital products. I learned a lot about the details that need attention for this group, such as many users not knowing that table headers can be clicked. Therefore, if you want to design table headers as filters, more obvious buttons are needed to prompt them, and so on.</p>
+                    </article>
+                </div>
+            </article>
+        </section>
+
+        <a href="#">
+            <span class="back-to-top material-symbols-outlined">
+                expand_circle_up
+            </span>
+        </a>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/tsaitzuhui/" target="_blank"><img class="sms"
+                            src="../img/LI-In-White.png" alt="Link to Sally Tsai's LinkedIn"></a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/tsai-tzu-hui" target="_blank"><img src="../img/icon_behance.png"
+                            alt="Link to Sally Tsai's Behance"></a>
+                </li>
+                <li>
+                    <a href="mailto:tzuhui.tsai@gmail.com" target="_blank">
+                        <img src="../img/envelope.png" alt="Send an email to Sally Tsai"></a>
+                </li>
+            </ul>
+        </nav>
+        <p>All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
